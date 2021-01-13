@@ -1,7 +1,7 @@
 {
     "name": "@via-profit-services/sms",
     "support": "https://via-profit.ru",
-    "version": "0.1.0-rc.1",
+    "version": "0.1.0-rc.2",
     "description": "Via Profit SMS provider",
     "main": "dist/index.js",
     "engines": {
