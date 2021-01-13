@@ -1,11 +1,11 @@
 import { Middleware } from '@via-profit-services/core';
-import { Configuration } from '@via-profit-services/sms';
+import type { Configuration, MiddlewareFactory } from '@via-profit-services/sms';
 
 import { ProviderSMSC, ProviderSMSRU } from './providers';
 import smsLogger from './sms-logger';
 import SMSService from './SMSService';
 
-const middlewareFactory = (configuration: Configuration): Middleware => {
+const middlewareFactory: MiddlewareFactory = (configuration) => {
   const { provider } = configuration;
   const pool: ReturnType<Middleware> = {
     context: null,
