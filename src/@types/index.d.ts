@@ -42,6 +42,7 @@ declare module '@via-profit-services/sms' {
     phones: string[];
     message: string;
     sender?: string;
+    emulate?: boolean;
   }
 
   export type MiddlewareFactory = (configuration: Configuration) => Middleware;

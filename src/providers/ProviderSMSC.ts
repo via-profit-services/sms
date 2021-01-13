@@ -36,8 +36,16 @@ class ProviderSMSC implements Provider {
 
 
   public async send(params: SendParams): Promise<SendResult> {
-    const { phones, message, sender } = params;
+    const { phones, message, sender, emulate } = params;
     const { login, password } = this.props;
+
+    if (emulate) {
+
+      return phones.map((phone) => ({
+        phone,
+        result: true,
+      }));
+    }
 
     const url = new URL(URL_SEND);
     url.searchParams.append('login', login);
