@@ -40,11 +40,14 @@ class ProviderSMSC implements Provider {
     const { login, password } = this.props;
 
     if (emulate) {
-
-      return phones.map((phone) => ({
+      const result: SendResult = phones.map((phone) => ({
         phone,
         result: true,
       }));
+      // eslint-disable-next-line no-console
+      console.log(`Message emulation «${message}» to recipients [${phones.join('; ')}]`);
+
+      return result;
     }
 
     const url = new URL(URL_SEND);

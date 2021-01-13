@@ -15,12 +15,7 @@ class SMSService {
   }
 
   public async send (params: SendParams): Promise<SendResult> {
-    const { emulate } = params;
     const result = await this.provider.send(params);
-    if (emulate) {
-      // eslint-disable-next-line no-console
-      console.log('SMS Emulation', { result });
-    }
 
     return result;
   }
