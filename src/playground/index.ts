@@ -23,7 +23,6 @@ import schema from './schema';
   const { graphQLExpress } = await factory({
     server,
     schema,
-    introspection: true,
     debug: true,
     middleware: [smsMiddleware],
   });
