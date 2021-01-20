@@ -32,20 +32,3 @@ import schema from './schema';
     console.log(`Started at http://localhost:${port}/graphql`);
   });
 })();
-// import SMS from '../index';
-
-// (async () => {
-//   const smsService = new SMS({
-//     smsc: {
-//       login: 'via-profit',
-//       password: 'nonprofitproject',
-//     },
-//   });
-
-//   const res = await smsService.send('smsc', {
-//     phones: ['79122129984'],
-//     message: 'test',
-//   });
-
-//   console.log({ res });
-// })();
