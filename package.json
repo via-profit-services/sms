@@ -1,7 +1,7 @@
 {
     "name": "@via-profit-services/sms",
     "support": "https://via-profit.ru",
-    "version": "1.0.0-rc.1",
+    "version": "1.0.0-rc.2",
     "description": "Via Profit SMS provider",
     "main": "dist/index.js",
     "engines": {
@@ -43,7 +43,7 @@
     ],
     "license": "MIT",
     "peerDependencies": {
-        "@via-profit-services/core": "*",
+        "@via-profit-services/core": "^1.0.0",
         "uuid": "*"
     },
     "devDependencies": {
@@ -61,7 +61,7 @@
         "@types/webpack-merge": "^4.1.5",
         "@typescript-eslint/eslint-plugin": "^4.6.1",
         "@typescript-eslint/parser": "^4.6.1",
-        "@via-profit-services/core": "file://home/dhs/Projects/@via-profit-services/core/package-0.31.6-rc.50.tgz",
+        "@via-profit-services/core": "file://home/dhs/Projects/@via-profit-services/core/package-1.0.0-rc.1.tgz",
         "@via-profit-services/eslint-config": "^0.1.11",
         "@zerollup/ts-transform-paths": "^1.7.11",
         "cross-env": "^6.0.3",
