@@ -5,7 +5,7 @@
 
 /// <reference types="node" />
 declare module '@via-profit-services/sms' {
-  import { Logger } from '@via-profit-services/core';
+  import { Logger, Middleware } from '@via-profit-services/core';
 
   export type ProviderName = 'smsc.ru' | 'sms.ru';
 
@@ -42,9 +42,10 @@ declare module '@via-profit-services/sms' {
     phones: string[];
     message: string;
     sender?: string;
+    emulate?: boolean;
   }
 
-
+  export type MiddlewareFactory = (configuration: Configuration) => Middleware;
 
   export interface ProviderSMSRUProps {
     apiID: string;
@@ -68,6 +69,9 @@ declare module '@via-profit-services/sms' {
     constructor(props: Configuration);
     send(params: SendParams): Promise<SendResult>;
   }
+
+
+  export const factory: MiddlewareFactory;
 }
 
 

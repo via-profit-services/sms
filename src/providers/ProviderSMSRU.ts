@@ -72,8 +72,19 @@ class ProviderSMSRU implements Provider {
   }
 
   public async send(params: SendParams): Promise<SendResult> {
-    const { phones, message, sender } = params;
+    const { phones, message, sender, emulate } = params;
     const { apiID } = this.props;
+
+    if (emulate) {
+      const result: SendResult = phones.map((phone) => ({
+        phone,
+        result: true,
+      }));
+      // eslint-disable-next-line no-console
+      console.log(`Message emulation «${message}» to recipients [${phones.join('; ')}]`);
+
+      return result;
+    }
 
     const url = new URL(URL_SEND);
     url.searchParams.append('api_id', apiID);
