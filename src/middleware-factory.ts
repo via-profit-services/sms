@@ -12,7 +12,7 @@ const middlewareFactory: MiddlewareFactory = (configuration) => {
     const { logDir } = config;
     const logger = smsLogger({ logDir });
 
-    context.logger.sms = context.logger.sms ?? logger;
+    context.logger.sms = logger;
 
     const providerConfig: Configuration = {
       provider,
@@ -21,12 +21,12 @@ const middlewareFactory: MiddlewareFactory = (configuration) => {
 
     switch (provider) {
       case 'sms.ru':
-        context.services.sms = context.services.sms ?? new SMSService(ProviderSMSRU, providerConfig, logger);
+        context.services.sms = new SMSService(ProviderSMSRU, providerConfig, logger);
         break;
 
       case 'smsc.ru':
         default:
-          context.services.sms = context.services.sms ?? new SMSService(ProviderSMSC, providerConfig, logger);
+          context.services.sms = new SMSService(ProviderSMSC, providerConfig, logger);
         break;
     }
 
