@@ -7,23 +7,12 @@ import SMSService from './SMSService';
 
 const middlewareFactory: MiddlewareFactory = (configuration) => {
   const { provider } = configuration;
-  const pool: ReturnType<Middleware> = {
-    context: null,
-  };
 
   const middleware: Middleware = ({ context, config }) => {
-
     const { logDir } = config;
-
-    if (pool.context) {
-      return pool;
-    }
-
-
     const logger = smsLogger({ logDir });
 
-    pool.context = context;
-    pool.context.logger.sms = logger;
+    context.logger.sms = context.logger.sms ?? logger;
 
     const providerConfig: Configuration = {
       provider,
@@ -32,17 +21,19 @@ const middlewareFactory: MiddlewareFactory = (configuration) => {
 
     switch (provider) {
       case 'sms.ru':
-        pool.context.services.sms = new SMSService(ProviderSMSRU, providerConfig, logger);
+        context.services.sms = context.services.sms ?? new SMSService(ProviderSMSRU, providerConfig, logger);
         break;
 
       case 'smsc.ru':
         default:
-          pool.context.services.sms = new SMSService(ProviderSMSC, providerConfig, logger);
+          context.services.sms = context.services.sms ?? new SMSService(ProviderSMSC, providerConfig, logger);
         break;
     }
 
 
-    return pool;
+    return {
+      context,
+    };
   };
 
   return middleware;
