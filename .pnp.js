@@ -51,7 +51,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/webpack-merge", "npm:4.1.5"],
             ["@typescript-eslint/eslint-plugin", "virtual:92be5fac043005c7b68378756159d2b176d8bf752b84cee99b88af6896eac43fb6664ef0eab96eb5a8ad231566f98e753a5f3f071a4fda51eb27cc653c981d47#npm:4.8.2"],
             ["@typescript-eslint/parser", "virtual:92be5fac043005c7b68378756159d2b176d8bf752b84cee99b88af6896eac43fb6664ef0eab96eb5a8ad231566f98e753a5f3f071a4fda51eb27cc653c981d47#npm:4.8.2"],
-            ["@via-profit-services/core", "virtual:92be5fac043005c7b68378756159d2b176d8bf752b84cee99b88af6896eac43fb6664ef0eab96eb5a8ad231566f98e753a5f3f071a4fda51eb27cc653c981d47#file://home/dhs/Projects/@via-profit-services/core/package-1.0.0-rc.1.tgz::locator=%40via-profit-services%2Fsms%40workspace%3A."],
+            ["@via-profit-services/core", "virtual:92be5fac043005c7b68378756159d2b176d8bf752b84cee99b88af6896eac43fb6664ef0eab96eb5a8ad231566f98e753a5f3f071a4fda51eb27cc653c981d47#npm:1.0.5"],
             ["@via-profit-services/eslint-config", "npm:0.1.11"],
             ["@zerollup/ts-transform-paths", "virtual:92be5fac043005c7b68378756159d2b176d8bf752b84cee99b88af6896eac43fb6664ef0eab96eb5a8ad231566f98e753a5f3f071a4fda51eb27cc653c981d47#npm:1.7.18"],
             ["cross-env", "npm:6.0.3"],
@@ -1236,10 +1236,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@via-profit-services/core", [
-        ["virtual:92be5fac043005c7b68378756159d2b176d8bf752b84cee99b88af6896eac43fb6664ef0eab96eb5a8ad231566f98e753a5f3f071a4fda51eb27cc653c981d47#file://home/dhs/Projects/@via-profit-services/core/package-1.0.0-rc.1.tgz::locator=%40via-profit-services%2Fsms%40workspace%3A.", {
-          "packageLocation": "./.yarn/$$virtual/@via-profit-services-core-virtual-cde8216918/0/cache/@via-profit-services-core-file-3f923cbb1a-061625c201.zip/node_modules/@via-profit-services/core/",
+        ["virtual:92be5fac043005c7b68378756159d2b176d8bf752b84cee99b88af6896eac43fb6664ef0eab96eb5a8ad231566f98e753a5f3f071a4fda51eb27cc653c981d47#npm:1.0.5", {
+          "packageLocation": "./.yarn/$$virtual/@via-profit-services-core-virtual-ff77d87039/0/cache/@via-profit-services-core-npm-1.0.5-60a1610ede-70166fa0c9.zip/node_modules/@via-profit-services/core/",
           "packageDependencies": [
-            ["@via-profit-services/core", "virtual:92be5fac043005c7b68378756159d2b176d8bf752b84cee99b88af6896eac43fb6664ef0eab96eb5a8ad231566f98e753a5f3f071a4fda51eb27cc653c981d47#file://home/dhs/Projects/@via-profit-services/core/package-1.0.0-rc.1.tgz::locator=%40via-profit-services%2Fsms%40workspace%3A."],
+            ["@via-profit-services/core", "virtual:92be5fac043005c7b68378756159d2b176d8bf752b84cee99b88af6896eac43fb6664ef0eab96eb5a8ad231566f98e753a5f3f071a4fda51eb27cc653c981d47#npm:1.0.5"],
             ["@types/dataloader", null],
             ["@types/express", "npm:4.17.9"],
             ["@types/graphql", null],
@@ -1306,7 +1306,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/webpack-merge", "npm:4.1.5"],
             ["@typescript-eslint/eslint-plugin", "virtual:92be5fac043005c7b68378756159d2b176d8bf752b84cee99b88af6896eac43fb6664ef0eab96eb5a8ad231566f98e753a5f3f071a4fda51eb27cc653c981d47#npm:4.8.2"],
             ["@typescript-eslint/parser", "virtual:92be5fac043005c7b68378756159d2b176d8bf752b84cee99b88af6896eac43fb6664ef0eab96eb5a8ad231566f98e753a5f3f071a4fda51eb27cc653c981d47#npm:4.8.2"],
-            ["@via-profit-services/core", "virtual:92be5fac043005c7b68378756159d2b176d8bf752b84cee99b88af6896eac43fb6664ef0eab96eb5a8ad231566f98e753a5f3f071a4fda51eb27cc653c981d47#file://home/dhs/Projects/@via-profit-services/core/package-1.0.0-rc.1.tgz::locator=%40via-profit-services%2Fsms%40workspace%3A."],
+            ["@via-profit-services/core", "virtual:92be5fac043005c7b68378756159d2b176d8bf752b84cee99b88af6896eac43fb6664ef0eab96eb5a8ad231566f98e753a5f3f071a4fda51eb27cc653c981d47#npm:1.0.5"],
             ["@via-profit-services/eslint-config", "npm:0.1.11"],
             ["@zerollup/ts-transform-paths", "virtual:92be5fac043005c7b68378756159d2b176d8bf752b84cee99b88af6896eac43fb6664ef0eab96eb5a8ad231566f98e753a5f3f071a4fda51eb27cc653c981d47#npm:1.7.18"],
             ["cross-env", "npm:6.0.3"],
